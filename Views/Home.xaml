@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HOSEO_HEMS.Views.Home">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="LNotice" Text="강의 공지사항" Grid.Row="0" Grid.Column="0" FontSize="20" BackgroundColor="#F7876C" Clicked="LNotice_Clicked"/>
+        <Button Text="시간표" Grid.Row="0" Grid.Column="1" FontSize="20" BackgroundColor="#FAD362" Clicked="Timetable_Clicked"/>
+        <Button Text="수강교과목" Grid.Row="1" Grid.Column="0" FontSize="20" BackgroundColor="#CAEB87" Clicked="TakingC_Clicked"/>
+        <Button Text="강의시간표" Grid.Row="1" Grid.Column="1" FontSize="20" BackgroundColor="#7CF7B6" Clicked="LTimetable_Clicked"/>
+        <Button Text="강의게시판" Grid.Row="2" Grid.Column="0" FontSize="20" BackgroundColor="#82E9E7" Clicked="LBoard_Clicked"/>
+        <Button Text="전체학점조회" Grid.Row="2" Grid.Column="1" FontSize="20" BackgroundColor="#61AEEE" Clicked="AllCredit_Clicked"/>
+        <Button Text="전체성적조회" Grid.Row="3" Grid.Column="0" FontSize="20" BackgroundColor="#8D88F8" Clicked="AllGrade_Clicked"/>
+        <Button Text="강의평가" Grid.Row="3" Grid.Column="1" FontSize="20" BackgroundColor="#D380F5" Clicked="LEvaluation_Clicked"/>
+        <Button Text="봉사활동조회" Grid.Row="4" Grid.Column="0" FontSize="20" BackgroundColor="#F587BF" Clicked="VSSearch_Clicked"/>
+        <Button Text="도서검색" Grid.Row="4" Grid.Column="1" FontSize="20" BackgroundColor="#A7F27E" Clicked="BSearch_Clicked"/>
+    </Grid>
+</ContentPage>

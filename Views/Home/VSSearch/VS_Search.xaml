@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HOSEO_HEMS.Views.VS_Search">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="과목" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
+        <Label Text="제목" Grid.Row="0" Grid.Column="1" FontSize="20" HorizontalOptions="Center"/>
+
+        <ListView x:Name="subject"
+                ItemsSource="{Binding Items}"
+                ItemTapped="Handle_ItemTapped"
+                CachingStrategy="RecycleElement" Grid.Row="1" Grid.Column="0">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Item 1</x:String>
+                <x:String>Item 2</x:String>
+                <x:String>Item 3</x:String>
+                <x:String>Item 4</x:String>
+                <x:String>Item 5</x:String>
+            </x:Array>
+        </d:ListView.ItemsSource>
+        <!--Built in Cells-->
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding .}" d:Text="{Binding .}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    
+        <!--Custom View Cells-->
+        <!--
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <Label Text="{Binding Text}" 
+                       d:Text="{Binding .}"
+                       Style="{DynamicResource ListItemTextStyle}" />
+                <Label Text="{Binding Detail}" 
+                       d:Text="Detail"
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        -->
+      </ListView>
+
+        <ListView x:Name="title"
+                ItemsSource="{Binding Items}"
+                ItemTapped="Handle_ItemTapped"
+                CachingStrategy="RecycleElement" Grid.Row="1" Grid.Column="1">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Item 1</x:String>
+                    <x:String>Item 2</x:String>
+                    <x:String>Item 3</x:String>
+                    <x:String>Item 4</x:String>
+                    <x:String>Item 5</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <!--Built in Cells-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" d:Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <!--Custom View Cells-->
+            <!--
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <Label Text="{Binding Text}" 
+                       d:Text="{Binding .}"
+                       Style="{DynamicResource ListItemTextStyle}" />
+                <Label Text="{Binding Detail}" 
+                       d:Text="Detail"
+                       Style="{DynamicResource ListItemDetailTextStyle}"/>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        -->
+        </ListView>
+    </Grid>
+</ContentPage>

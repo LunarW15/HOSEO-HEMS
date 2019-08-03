@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HOSEO_HEMS.Views.L_Ttable">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lbl_subject" Text="과목" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
+        <Label x:Name="lbl_title" Text="제목" Grid.Row="0" Grid.Column="1" FontSize="20" HorizontalOptions="Center"/>
+
+        <ListView x:Name="L_Ttable_View" Grid.Row="1" Grid.ColumnSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="list_subject" Grid.Column="0" Text="{Binding Subjects}" HorizontalOptions="Center" TextColor="White"/>
+                                <Label x:Name="list_title" Grid.Column="1" Text="{Binding Titles}" HorizontalOptions="Center" TextColor="White"/>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

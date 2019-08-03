@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.11" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\FindPW.xaml.cs">
+      <DependentUpon>FindPW.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\LBoard\L_Board.xaml.cs">
+      <DependentUpon>L_Board.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\AllCredit\All_Credit.xaml.cs">
+      <DependentUpon>All_Credit.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\AllGrade\All_Grade.xaml.cs">
+      <DependentUpon>All_Grade.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\LEvaluation\L_Evaluation.xaml.cs">
+      <DependentUpon>L_Evaluation.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\BSearch\B_Search.xaml.cs">
+      <DependentUpon>B_Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\VSSearch\VS_Search.xaml.cs">
+      <DependentUpon>VS_Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\LTimetable\L_Ttable.xaml.cs">
+      <DependentUpon>L_Ttable.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\TakingC\T_Class.xaml.cs">
+      <DependentUpon>T_Class.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\Timetable\Ttable.xaml.cs">
+      <DependentUpon>Ttable.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Home\LNotice\L_Notice.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

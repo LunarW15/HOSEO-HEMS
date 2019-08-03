@@ -1,0 +1,14 @@
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\bin\Release\netstandard2.0\HOSEO_HEMS.deps.json
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\bin\Release\netstandard2.0\HOSEO_HEMS.dll
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\bin\Release\netstandard2.0\ref\HOSEO_HEMS.dll
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\bin\Release\netstandard2.0\HOSEO_HEMS.pdb
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\App.xaml.g.cs
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\HOSEO_HEMS.csproj.CoreCompileInputs.cache
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\HOSEO_HEMS.AssemblyInfoInputs.cache
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\HOSEO_HEMS.AssemblyInfo.cs
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\XamlC.stamp
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\HOSEO_HEMS.dll
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\ref\HOSEO_HEMS.dll
+F:\Google 드라이브\Programming (프로그래밍)\HOSEO_HEMS\HOSEO_HEMS\HOSEO_HEMS\obj\Release\netstandard2.0\HOSEO_HEMS.pdb

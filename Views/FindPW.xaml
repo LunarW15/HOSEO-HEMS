@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HOSEO_HEMS.Views.FindPW">
+
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="" Opacity="0.6" Margin="0,80,0,0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True"/>
+
+            <Label x:Name="lbl_cno" Text="학번"/>
+            <Entry x:Name="entry_cno" Placeholder="학번" BackgroundColor="White"/>
+            <Label x:Name="lbl_name" Text="이름" Margin="0,10,0,0"/>
+            <Entry x:Name="entry_name" Placeholder="이름" BackgroundColor="White"/>
+            <Label x:Name="lbl_resno" Text="주민번호" Margin="0,10,0,0"/>
+            <Entry x:Name="entry_resno" Placeholder="앞 6자리" BackgroundColor="White"/>
+            <Label x:Name="lbl_phoneno" Text="핸드폰 번호" Margin="0,10,0,0"/>
+            <Entry x:Name="entry_phoneno" Placeholder="핸드폰 번호" BackgroundColor="White"/>
+
+            <Button x:Name="new_pwb" Text="신규비밀번호 요청" BackgroundColor="#0CBCA4" TextColor="#222431" FontSize="16" Margin="0,15,0,0" Clicked="New_pwb_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

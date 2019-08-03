@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HOSEO_HEMS.Views.B_Search">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Picker x:Name="pick_search" Grid.Row="0" Grid.Column="0" TextColor="White" SelectedIndexChanged="Pick_search_SelectedIndexChanged"/>
+            <Entry x:Name="entry_search" Placeholder="" BackgroundColor="White" Grid.Row="0" Grid.Column="1" Margin="0,10,10,0"/>
+            <Button x:Name="btn_search" Text="검색" BackgroundColor="#4EB8CE" TextColor="#222431" FontSize="16" Grid.Row="0" Grid.Column="2" Margin="0,10,10,0" Clicked="Btn_search_Clicked"/>
+        </Grid>
+        
+        <!--<Label x:Name="lbl_subject" Text="번호" Grid.Row="0" Grid.Column="0" FontSize="18" HorizontalOptions="Center"/>-->
+        <Label x:Name="lbl_bname" Text="도서명" Grid.Row="1" Grid.Column="0" FontSize="18" HorizontalOptions="Center"/>
+        <Label x:Name="lbl_bauthor" Text="저자" Grid.Row="1" Grid.Column="1" FontSize="18" HorizontalOptions="Center"/>
+        <Label x:Name="lbl_bpub" Text="출판사" Grid.Row="1" Grid.Column="2" FontSize="18" HorizontalOptions="Center"/>
+        <!--<Label x:Name="lbl_subject" Text="출판연도" Grid.Row="0" Grid.Column="4" FontSize="18" HorizontalOptions="Center"/> -->
+
+        <ListView x:Name="B_Search_View" ItemTapped="Handle_ItemTapped" Grid.Row="2" Grid.ColumnSpan="3">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="list_bname" Grid.Column="0" Text="{Binding BName}" HorizontalOptions="Center" TextColor="White"/>
+                                <Label x:Name="list_bauthor" Grid.Column="1" Text="{Binding BAuthor}" HorizontalOptions="Center" TextColor="White"/>
+                                <Label x:Name="list_bpub" Grid.Column="2" Text="{Binding BPub}" HorizontalOptions="Center" TextColor="White"/>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>
